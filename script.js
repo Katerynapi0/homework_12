@@ -8,7 +8,9 @@ for(let i = 0; i < userLength; i++){
 };
 alert(`Ваш масив: ${myArray}`);
 
-myArray.sort();
+myArray.sort(function(a,b){
+    return a - b;
+});
 alert(`Відсортований масив за зростанням: ${myArray}`);
 
 myArray.splice(1,3);
